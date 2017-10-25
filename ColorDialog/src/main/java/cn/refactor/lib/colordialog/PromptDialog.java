@@ -18,6 +18,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import cn.refactor.lib.colordialog.util.DisplayUtil;
@@ -40,7 +41,7 @@ public class PromptDialog extends Dialog {
     public static final int DIALOG_TYPE_DEFAULT = DIALOG_TYPE_INFO;
 
     private AnimationSet mAnimIn, mAnimOut;
-    private View mDialogView;
+    private View mDialogView, mContentScrollView;
     private TextView mTitleTv, mContentTv, mPositiveBtn;
     private OnPositiveListener mOnPositiveListener;
 

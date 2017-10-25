@@ -12,6 +12,12 @@
         android:text="@string/prompt_dialog"/>
 
     <Button
+        android:onClick="showLongPromptDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/long_prompt_dialog"/>
+
+    <Button
         android:onClick="showPicDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

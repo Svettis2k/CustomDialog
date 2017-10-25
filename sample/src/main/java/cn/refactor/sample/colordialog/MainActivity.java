@@ -39,6 +39,24 @@ public class MainActivity extends AppCompatActivity {
             }).show();
     }
 
+    public void showLongPromptDialog(View view) {
+        showLongPromptDlg();
+    }
+
+    private void showLongPromptDlg() {
+        new PromptDialog(this)
+                .setDialogType(PromptDialog.DIALOG_TYPE_SUCCESS)
+                .setAnimationEnable(true)
+                .setTitleText(getString(R.string.success))
+                .setContentText(getString(R.string.long_text_data))
+                .setPositiveListener(getString(R.string.ok), new PromptDialog.OnPositiveListener() {
+                    @Override
+                    public void onClick(PromptDialog dialog) {
+                        dialog.dismiss();
+                    }
+                }).show();
+    }
+
     public void showTextDialog(View view) {
         ColorDialog dialog = new ColorDialog(this);
         dialog.setColor("#8ECB54");

@@ -13,6 +13,8 @@
     <string name="warning">Warning</string>
     <string name="text_data">Your info text goes here. Loremipsum dolor sit amet, consecteturn adipisicing elit, sed do eiusmod.</string>
     <string name="prompt_dialog">Prompt Dialog</string>
+    <string name="long_text_data">Your info text goes here. Lorem ipsum dolor sit amet, tempor ceteros in vel, in inani noster fuisset has. An enim mollis ius, qui cu eros postea. At dico nominavi pri, pri munere propriae et. Nemore persequeris no nec, vim dicit utinam cu. Ius cu vidisse delenit.\n\nVix volutpat molestiae ut, vidit malis est ne. Mel at ferri altera explicari, no graece vulputate honestatis eos. Mel cu doming accusata perpetua, tota modus te ius, ne vix voluptua platonem rationibus. Eu prompta laboramus ius, nam aliquam perfecto ei. Ei his dicat intellegat.\n\nTe nam putent referrentur. Est detracto eleifend an, ad habeo ridens tamquam nec. Gloriatur complectitur an sit. Vel ex solet adipisci reprehendunt.\n\nSea eu ipsum civibus. At oratio labitur nec, graece mollis oblique te eos. Erat soluta mea id. Stet quot luptatum cum te. Alii mnesarchum et ius.\n\nFacer vituperata cum ex, ea sit viderer atomorum. An assum vocibus has, et vitae dolore partem mel. Mea graeco intellegebat ne. Falli patrioque sit ut, quo esse scripta consetetur ad. Quis maluisset dissentiunt per te.</string>
+    <string name="long_prompt_dialog">Long Prompt Dialog</string>
     <string name="pic">Pic</string>
     <string name="text">Text</string>
     <string name="text_and_pic">Text And Pic</string>
