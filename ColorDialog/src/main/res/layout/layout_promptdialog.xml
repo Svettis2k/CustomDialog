@@ -64,6 +64,7 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:textColor="@color/color_dialog_content_prompt"
+            android:textSize="12sp"
             android:autoLink="web"
             android:linksClickable="true"
             android:visibility="visible" />
