@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             .setAnimationEnable(true)
             .setTitleText(getString(R.string.success))
             .setContentText(getString(R.string.text_data))
+            .setContentCentered(true)
             .setPositiveListener(getString(R.string.ok), new PromptDialog.OnPositiveListener() {
                 @Override
                 public void onClick(PromptDialog dialog) {

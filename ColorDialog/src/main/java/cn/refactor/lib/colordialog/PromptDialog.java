@@ -11,6 +11,7 @@ import android.graphics.Path;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -47,6 +48,7 @@ public class PromptDialog extends Dialog {
 
     private int mDialogType;
     private boolean mIsShowAnim;
+    private boolean mIsContentCentered;
     private CharSequence mTitle, mContent, mBtnText;
 
     public PromptDialog(Context context) {
@@ -109,6 +111,9 @@ public class PromptDialog extends Dialog {
 
         mTitleTv.setText(mTitle);
         mContentTv.setText(mContent);
+        if (mIsContentCentered) {
+            mContentTv.setGravity(Gravity.CENTER);
+        }
         mPositiveBtn.setText(mBtnText);
     }
 
@@ -146,7 +151,7 @@ public class PromptDialog extends Dialog {
     private int getLogoResId(int mDialogType) {
         if (DIALOG_TYPE_DEFAULT == mDialogType) {
             return R.mipmap.ic_info;
-        }
+        } else
         if (DIALOG_TYPE_INFO == mDialogType) {
             return R.mipmap.ic_info;
         }
@@ -323,6 +328,11 @@ public class PromptDialog extends Dialog {
 
     public PromptDialog setContentText(CharSequence content) {
         mContent = content;
+        return this;
+    }
+
+    public PromptDialog setContentCentered(boolean centered) {
+        mIsContentCentered = centered;
         return this;
     }
 
