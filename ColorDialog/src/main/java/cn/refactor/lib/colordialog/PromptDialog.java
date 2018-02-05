@@ -19,7 +19,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import cn.refactor.lib.colordialog.util.DisplayUtil;
@@ -73,7 +72,6 @@ public class PromptDialog extends Dialog {
         initView();
 
         initListener();
-
     }
 
     private void initView() {
@@ -98,7 +96,6 @@ public class PromptDialog extends Dialog {
 
         setBtnBackground(mPositiveBtn);
         setBottomCorners(llBtnGroup);
-
 
         int radius = DisplayUtil.dp2px(getContext(), DEFAULT_RADIUS);
         float[] outerRadii = new float[] { radius, radius, radius, radius, 0, 0, 0, 0 };
@@ -151,7 +148,7 @@ public class PromptDialog extends Dialog {
     private int getLogoResId(int mDialogType) {
         if (DIALOG_TYPE_DEFAULT == mDialogType) {
             return R.mipmap.ic_info;
-        } else
+        }
         if (DIALOG_TYPE_INFO == mDialogType) {
             return R.mipmap.ic_info;
         }
@@ -277,13 +274,11 @@ public class PromptDialog extends Dialog {
 
     }
 
-
     private void setBtnBackground(final TextView btnOk) {
         btnOk.setTextColor(createColorStateList(getContext().getResources().getColor(getColorResId(mDialogType)),
                 getContext().getResources().getColor(R.color.color_dialog_gray)));
         btnOk.setBackgroundDrawable(getContext().getResources().getDrawable(getSelBtn(mDialogType)));
     }
-
 
     private void setBottomCorners(View llBtnGroup) {
         int radius = DisplayUtil.dp2px(getContext(), DEFAULT_RADIUS);
